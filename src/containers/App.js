@@ -1,23 +1,19 @@
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { Layout, Menu } from 'antd';
+import Add_car from './Add_car/Add_car';
 const { Header, Content, Footer } = Layout;
 function App() {
   return (
 <Layout className="layout">
-    <Header style={{backgroundColor:'orange'}}>
+    <Header style={{backgroundColor:'#ccc'}}>
       <div className="logo" />
-      <Menu style={{backgroundColor:'orange', textAlign:'center'}}  mode="horizontal" defaultSelectedKeys={['2']}>
-        {new Array(3).fill(null).map((_, index) => {
-          const key = index + 1;
-          return <Menu.Item key={key}>{`nav ${key}`}</Menu.Item>;
-        })}
+      <Menu style={{backgroundColor:'#ccc', textAlign:'center'}}  mode="horizontal" defaultSelectedKeys={['2']}>
+        <h1 style={{textTransform:'uppercase', float:'right'}}>car registration management sysytem</h1>
       </Menu>
     </Header>
-    <Content style={{ padding: '80px 50px', height:'80vh', textAlign:'center' }}>
-      
-        
-      <div className="site-layout-content">Content</div>
+    <Content style={{ padding: '80px', height:'80vh', backgroundColor:'white' }}>
+      <Add_car />
     </Content>
-    <Footer style={{ textAlign: 'center', color:'#ccc', backgroundColor:'magenta' }}>Ant Design ©2018 Created by Ant UED</Footer>
+    <Footer style={{ textAlign: 'center', color:'#f2f2f2', backgroundColor:'blue' }}>Ant Design ©2018 Created by Ant UED</Footer>
   </Layout>
   );
 }
