@@ -3,7 +3,7 @@ import Add_car from './Add_car/Add_car';
 const { Header, Content, Footer } = Layout;
 function App() {
   return (
-<Layout className="layout">
+  <Layout className="layout">
     <Header style={{backgroundColor:'#ccc', position:'relative', paddingBottom:'6%'}}>
       <div className="logo" />
       <Menu style={{backgroundColor:'#ccc', position:'absolute', left:'35%'}}  mode="horizontal" defaultSelectedKeys={['2']}>
@@ -13,7 +13,7 @@ function App() {
     <Content style={{ padding: '80px', height:'80vh', backgroundColor:'white' }}>
       <Add_car />
     </Content>
-    <Footer style={{ textAlign: 'center', color:'#f2f2f2', backgroundColor:'blue' }}>Ant Design ©2018 Created by Ant UED</Footer>
+    <Footer style={{ textAlign: 'center', color:'#f2f2f2', backgroundColor:'blue' }}>Ant Design ©2021 Created by iddiMsangi</Footer>
   </Layout>
   );
 }
