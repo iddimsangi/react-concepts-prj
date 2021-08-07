@@ -4,9 +4,9 @@ const { Header, Content, Footer } = Layout;
 function App() {
   return (
 <Layout className="layout">
-    <Header style={{backgroundColor:'#ccc'}}>
+    <Header style={{backgroundColor:'#ccc', position:'relative', paddingBottom:'6%'}}>
       <div className="logo" />
-      <Menu style={{backgroundColor:'#ccc', textAlign:'center'}}  mode="horizontal" defaultSelectedKeys={['2']}>
+      <Menu style={{backgroundColor:'#ccc', position:'absolute', left:'35%'}}  mode="horizontal" defaultSelectedKeys={['2']}>
         <h1 style={{textTransform:'uppercase', float:'right'}}>car registration management sysytem</h1>
       </Menu>
     </Header>
