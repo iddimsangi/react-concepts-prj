@@ -1,5 +1,6 @@
 import { Layout, Menu } from 'antd';
 import Add_car from './Add_car/Add_car';
+import CarList from '../components/CarList/CarList';
 const { Header, Content, Footer } = Layout;
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       </Menu>
     </Header>
     <Content style={{ padding: '80px', height:'80vh', backgroundColor:'white' }}>
-      <Add_car />
+      {/* <Add_car /> */}
+      <CarList />
     </Content>
     <Footer style={{ textAlign: 'center', color:'#f2f2f2', backgroundColor:'blue' }}>Ant Design ©2021 Created by iddiMsangi</Footer>
   </Layout>
