@@ -1,11 +1,12 @@
 import React from 'react'
 import './carCard.css'
 // import car_profile from '../../../Assets/car.jpg';
-function CardCar() {
+function CardCar(props) {
+  const{ carName, engNo} = props.myCarObj;
     return (
         <div className="card">
-          <p>title</p>
-          <p>Eng No.</p>
+          <p>{carName}</p>
+          <p>{engNo}</p>
         </div>
     )
 }

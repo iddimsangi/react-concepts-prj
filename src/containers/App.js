@@ -3,6 +3,16 @@ import Add_car from './Add_car/Add_car';
 import CarList from '../components/CarList/CarList';
 const { Header, Content, Footer } = Layout;
 function App() {
+  const cars = [
+    {
+      carName:'BMW',
+      engNo:'#536363'
+    },
+    {
+      carName:'Benz',
+      engNo:'#000363'
+    }
+  ]
   return (
   <Layout className="layout">
     <Header style={{backgroundColor:'#ccc', position:'relative', paddingBottom:'6%'}}>
@@ -13,7 +23,7 @@ function App() {
     </Header>
     <Content style={{ padding: '80px', height:'auto', backgroundColor:'white' }}>
       {/* <Add_car /> */}
-      <CarList />
+      <CarList carsArray={cars} />
     </Content>
     <Footer style={{ textAlign: 'center', color:'#f2f2f2', backgroundColor:'blue', padding:'100px' }}>Ant Design ©2021 Created by iddiMsangi</Footer>
   </Layout>
