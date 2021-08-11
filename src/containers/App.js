@@ -11,11 +11,11 @@ function App() {
         <h1 style={{textTransform:'uppercase', float:'right'}}>car registration management sysytem</h1>
       </Menu>
     </Header>
-    <Content style={{ padding: '80px', height:'80vh', backgroundColor:'white' }}>
+    <Content style={{ padding: '80px', height:'auto', backgroundColor:'white' }}>
       {/* <Add_car /> */}
       <CarList />
     </Content>
-    <Footer style={{ textAlign: 'center', color:'#f2f2f2', backgroundColor:'blue' }}>Ant Design ©2021 Created by iddiMsangi</Footer>
+    <Footer style={{ textAlign: 'center', color:'#f2f2f2', backgroundColor:'blue', padding:'100px' }}>Ant Design ©2021 Created by iddiMsangi</Footer>
   </Layout>
   );
 }

@@ -4,7 +4,7 @@ export default class Add_car extends Component {
 
     render() {
         return (
-        <Form style={{ margin:'0 auto'}}
+        <Form style={{ margin:'0 auto', width:'50%'}}
       name="basic"
       initialValues={{ remember: true }}
     >
